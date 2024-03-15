@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interval</title>
+</head>
+<body>
+<h1>What time is it?</h1>
+<p id="time"></p>
+<script>
+    let timeElement = document.querySelector('#time') // this is getting the id from paragraph above so we can use it is javascript
+
+    // this interval function is basically if timeout function is infinite
+    // Capital D Date is as built in thing in Javascript that we can use to tell time, however it wont be real time unless we use the interval
+    setInterval( () => { // deleting function word before middle parentheses and adding => after them is the same thing
+        let realDate = Date()
+        timeElement.innerHTML = realDate // this is making the date variable and the timeElement variable equal so it displays on page correctly
+    }, 1000)
+</script>
+</body>
+</html>
